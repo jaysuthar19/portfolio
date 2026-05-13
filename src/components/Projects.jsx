@@ -202,6 +202,7 @@ function Projects() {
                 <a
                   href="https://habit-tracker-asn5.vercel.app/"
                   target="_blank"
+                  rel="noreferrer"
 
                   className="
                     border border-white
@@ -219,6 +220,7 @@ function Projects() {
                 <a
                   href="https://github.com/jaysuthar19/habit-tracker"
                   target="_blank"
+                  rel="noreferrer"
 
                   className="
                     bg-white
@@ -312,12 +314,56 @@ function Projects() {
               <p className="
                 text-gray-400
                 leading-relaxed
+                mb-8
               ">
 
                 Full-stack CRUD notes system using REST APIs
                 and MongoDB integration.
 
               </p>
+
+              <div className="
+                flex gap-4
+                flex-wrap
+              ">
+
+                <a
+                  href="https://notes-website-tan.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+
+                  className="
+                    border border-white
+                    px-6 py-3
+                    hover:bg-white
+                    hover:text-black
+                    transition-all duration-300
+                  "
+                >
+
+                  Live Demo
+
+                </a>
+
+                <a
+                  href="https://github.com/jaysuthar19/Notes_website"
+                  target="_blank"
+                  rel="noreferrer"
+
+                  className="
+                    bg-white
+                    text-black
+                    px-6 py-3
+                    hover:scale-105
+                    transition-all duration-300
+                  "
+                >
+
+                  GitHub
+
+                </a>
+
+              </div>
 
             </div>
 
@@ -391,12 +437,56 @@ function Projects() {
               <p className="
                 text-gray-400
                 leading-relaxed
+                mb-8
               ">
 
                 Responsive blog platform with dynamic content
                 management and modern UI.
 
               </p>
+
+              <div className="
+                flex gap-4
+                flex-wrap
+              ">
+
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noreferrer"
+
+                  className="
+                    border border-white
+                    px-6 py-3
+                    hover:bg-white
+                    hover:text-black
+                    transition-all duration-300
+                  "
+                >
+
+                  Live Demo
+
+                </a>
+
+                <a
+                  href="https://github.com/jaysuthar19/Blogs_website"
+                  target="_blank"
+                  rel="noreferrer"
+
+                  className="
+                    bg-white
+                    text-black
+                    px-6 py-3
+                    hover:scale-105
+                    transition-all duration-300
+                  "
+                >
+
+                  GitHub
+
+                </a>
+
+              </div>
 
             </div>
 
