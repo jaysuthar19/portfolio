@@ -1,145 +1,59 @@
+
 import { motion } from 'framer-motion'
 import MagneticButton from './MagneticButton'
 
 function Hero() {
-
   return (
-
-    <section className="
-      min-h-screen
-      flex items-center justify-center
-      px-6
-      relative
-      overflow-hidden
-    ">
-
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
       {/* Grid Background */}
-      <div className="
-        absolute inset-0
-        opacity-20
-      ">
-
-        <div className="
-          w-full h-full
-          bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)]
-          bg-[size:40px_40px]
-        " />
-
+      <div className="absolute inset-0 opacity-20" aria-hidden="true">
+        <div className="h-full w-full bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:40px_40px]" />
       </div>
 
       {/* Main Content */}
       <motion.div
-
-        initial={{
-          opacity: 0,
-          y: 40
-        }}
-
-        animate={{
-          opacity: 1,
-          y: 0
-        }}
-
-        transition={{
-          duration: 1
-        }}
-
-        className="
-          max-w-5xl
-          text-center
-          z-10
-        "
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className="z-10 max-w-5xl text-center"
       >
-
-        {/* Top Text */}
-        <p className="
-          uppercase
-          tracking-[10px]
-          text-gray-500
-          mb-6
-        ">
-
-          Full Stack MERN Developer
-
+        {/* Role */}
+        <p className="mb-6 text-sm uppercase tracking-[5px] text-gray-400 md:tracking-[8px]">
+          PHP Laravel Developer Intern · Full Stack Developer
         </p>
 
         {/* Main Heading */}
-        <h1 className="
-          text-6xl md:text-8xl
-          font-black
-          leading-tight
-          mb-8
-        ">
-
+        <h1 className="mb-8 text-6xl font-black leading-tight md:text-8xl">
           JAY
           <br />
           SUTHAR
-
         </h1>
 
         {/* Description */}
-        <p className="
-          text-gray-400
-          text-lg md:text-xl
-          max-w-2xl
-          mx-auto
-          leading-relaxed
-        ">
-
-          Building scalable web applications
-          with modern UI, authentication systems,
-          and REST APIs.
-
+        <p className="mx-auto max-w-2xl text-lg leading-relaxed text-gray-400 md:text-xl">
+          Building practical web applications, e-commerce experiences, and
+          business platforms with Laravel, React, and modern web technologies.
         </p>
 
         {/* Buttons */}
-        <div className="
-  mt-12
-  flex justify-center
-  gap-6
-  flex-wrap
-">
+        <div className="mt-12 flex flex-wrap justify-center gap-4 md:gap-6">
+          <MagneticButton
+            href="#projects"
+            className="border border-white px-8 py-4 transition-all duration-300 hover:bg-white hover:text-black"
+          >
+            View Projects
+          </MagneticButton>
 
-  <MagneticButton
-
-    href="#projects"
-
-    className="
-      border border-white
-      px-8 py-4
-      hover:bg-white
-      hover:text-black
-      transition-all duration-300
-    "
-  >
-
-    View Projects
-
-  </MagneticButton>
-
-  <MagneticButton
-
-    href="/resume.pdf"
-
-    className="
-      bg-white
-      text-black
-      px-8 py-4
-      hover:scale-105
-      transition-all duration-300
-    "
-  >
-
-    Download Resume
-
-  </MagneticButton>
-
-</div>
-
+          <MagneticButton
+            href="/resume.pdf"
+            download
+            className="bg-white px-8 py-4 text-black transition-all duration-300 hover:scale-105"
+          >
+            Download Resume
+          </MagneticButton>
+        </div>
       </motion.div>
-
     </section>
-
   )
 }
 
